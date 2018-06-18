@@ -1,0 +1,50 @@
+.set {
+  padding: rem(50) 0 rem(80);
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: rem(18);
+  }
+}
+
+.set__content {
+  display: flex;
+  align-items: center;
+}
+
+.set__img {
+  max-width: rem(740);
+  position: relative;
+  left: rem(-40);
+  top: rem(-10);
+}
+
+.set__descr {
+  padding: {
+    top: rem(6);
+    right: rem(20);
+  }
+}
+
+.set__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+  font-size: rem(24);
+  &:not(:last-child) {
+    margin-bottom: rem(104);
+  }
+}
+
+.set__line {
+  background: $green;
+  min-width: rem(128);
+  height: rem(1);
+  display: block;
+  margin-right: rem(24);
+}
+
+.set__icon {
+  margin-right: rem(32);
+}

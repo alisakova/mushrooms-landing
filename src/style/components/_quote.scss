@@ -1,0 +1,28 @@
+.quote {
+  background: #F2F2F2;
+  font-size: rem(32);
+  line-height: 1.4;
+  padding: rem(44) 0 rem(42);
+  font-style: italic;
+  .green {
+    color: #27AE60;
+  }
+}
+
+.quote__text {
+  padding: 0 rem(266);
+  position: relative;
+}
+
+
+.quote__icon {
+  position: absolute;
+  &_left {
+    left: rem(121);
+    top: rem(-12);
+  }
+  &_right {
+    right: rem(120);
+    bottom: rem(-9);
+  }
+}

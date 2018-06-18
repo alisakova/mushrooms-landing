@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1442px" height="446px" viewBox="0 0 1442 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Vector</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M516,310.000031 C347.5,262.500031 80.8333,385.166031 1,446.500031 L1,1 L1443,1 L1443,231.500031 C1400.6,203.900031 1317.67,220.000031 1281.5,231.500031 C1109,283.500031 1093,433.500031 915.5,425.500031 C738,417.499031 684.5,357.500031 516,310.000031 Z" id="path-1"></path>
+        <filter x="-0.3%" y="-0.9%" width="101.1%" height="103.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vector" transform="translate(-1.000000, -1.000000)" fill-rule="nonzero">
+            <g id="Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

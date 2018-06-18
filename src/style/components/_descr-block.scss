@@ -1,0 +1,48 @@
+.descr-block {
+  background: $blue;
+  margin-top: rem(-80);
+  padding: {
+    top: rem(356);
+    bottom: rem(126);
+  }
+  color: #fff;
+  h2 {
+    font-weight: 600;
+    margin-bottom: rem(44);
+  }
+}
+
+.descr-block__container {
+  display: flex;
+}
+
+.descr-block__descr {
+  padding: {
+    top: rem(15);
+    left: rem(50);
+  }
+  margin-right: rem(32);
+}
+
+.descr-block__img-container {
+  max-width: rem(448);
+  min-width: rem(448);
+}
+
+.descr-block__img {
+  &:first-child {
+    margin-bottom: rem(24);
+  }
+  &_medium {
+    max-width: rem(224);
+    margin-right: rem(18);
+  }
+  &_small {
+    max-width: rem(200);
+  }
+}
+
+.descr-block__img_small,
+.descr-block__img_medium {
+  display: inline-block;
+}

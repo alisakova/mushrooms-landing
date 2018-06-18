@@ -1,0 +1,31 @@
+.price {
+  margin-left: rem(84);
+  line-height: 1.37;
+}
+
+.price__row {
+  &:first-child {
+    // margin-bottom: rem(4);
+  }
+  &:last-child {
+    text-decoration: line-through;
+    color: #a0a0a0;
+    font-weight: 300;
+  }
+}
+
+.price__new {
+  font-size: rem(32);
+}
+
+.price__value-new {
+  color: $rose;
+  font-weight: 600;
+  font-size: rem(32);
+}
+
+.price__old,
+.price__value-old {
+  color: #a0a0a0;
+  font-size: rem(24);
+}
