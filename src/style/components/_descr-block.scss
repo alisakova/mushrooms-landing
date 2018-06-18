@@ -7,7 +7,6 @@
   }
   color: #fff;
   h2 {
-    font-weight: 600;
     margin-bottom: rem(44);
   }
 }
@@ -45,4 +44,34 @@
 .descr-block__img_small,
 .descr-block__img_medium {
   display: inline-block;
+}
+
+@media (min-width: 1500px) {
+  .descr-block {
+    padding-top: rem(450);
+  }
+}
+
+@media (min-width: 1600px) {
+  .descr-block {
+    margin-top: rem(-120);
+  }
+}
+
+@media (min-width: 1800px) {
+  .descr-block {
+    margin-top: rem(-130);
+  }
+}
+
+@media (max-width: 1420px) {
+  .descr-block {
+    margin-top: rem(-120);
+  }
+}
+
+@media (max-width: 1180px) {
+  .descr-block {
+    margin-top: rem(-130);
+  }
 }

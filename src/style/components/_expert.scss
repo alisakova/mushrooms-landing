@@ -1,0 +1,45 @@
+.expert {
+  background: #000;
+  color: #fff;
+  border-radius: rem(3);
+  box-shadow: 0px rem(4) rem(4) rgba(17, 17, 17, 0.25);
+  max-width: rem(1088);
+  margin: 0 auto rem(64);
+  p {
+    font-style: italic;
+  }
+  h2 {
+    margin-bottom: rem(26);
+  }
+}
+
+.expert__container {
+  display: flex;
+  justify-content: flex-start;
+  padding: rem(24) 0 0;
+}
+
+.expert__col {
+  &:first-child {
+    max-width: rem(357);
+    align-self: flex-end;
+    margin-right: rem(24);
+  }
+  &:last-child {
+    max-width: rem(651);
+    padding-bottom: rem(28);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.expert__signature {
+  max-width: rem(280);
+  align-self: flex-end;
+  text-align: right;
+  font-size: rem(18);
+  margin-top: rem(6);
+  .bold {
+    font-weight: 600;
+  }
+}

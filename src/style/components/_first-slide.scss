@@ -74,6 +74,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    font-weight: 300;
+  }
 }
 
 .first-slide__clock {
@@ -94,9 +97,51 @@
   background: url('../img/wave.svg') no-repeat;
   background-position-x: -31px;
   background-position-y: -7px;
-  background-size: cover;
-  height: rem(460);
+  background-size: 105%;
+  height: 100%;
   width: 100%;
   position: absolute;
-  bottom: rem(-170);
+  top: 61%;
+}
+
+@media (min-width: 1600px) {
+  .first-slide__wave {
+    top: 55%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .first-slide__wave {
+    top: 47%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .first-slide__wave {
+    top: 50%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .first-slide__wave {
+    top: 65%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .first-slide__wave {
+    top: 78%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .first-slide__wave {
+    top: 66%;
+  }
+}
+
+@media (max-width: 868px) {
+  .first-slide__wave {
+    top: 80%;
+  }
 }

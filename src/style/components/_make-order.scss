@@ -8,19 +8,76 @@
 
 .make-order__content {
   display: flex;
+  align-items: flex-start;
+  position: relative;
   background: #fff;
   width: 100%;
-  padding: rem(40) rem(32) rem(32);
+  max-width: rem(1088);
+  margin: 0 auto;
+  padding: rem(40) rem(32) rem(32) rem(48);
   box-shadow: 0px rem(4 4) rgba(0, 0, 0, 0.25);
   border-radius: rem(3);
 }
 
 .make-order__img {
-  max-width: rem(412);
+  max-width: rem(406);
+  position: relative;
+  left: rem(-100);
 }
 
 .make-order__caption {
   font-family: $caption-font;
-  font-size: rem(48);
+  font-size: rem(47);
   max-width: rem(236);
+  margin-top: rem(-13);
+  line-height: 1.3;
+  .large {
+    font-size: rem(56);
+  }
+}
+
+.make-order__descr {
+  margin-left: rem(-50);
+}
+
+.make-order__time {
+  margin-bottom: rem(23);
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.make-order__clock {
+  margin-bottom: rem(26)
+}
+
+.make-order__price {
+  margin-bottom: rem(28);
+  &.price {
+    margin-left: 0;
+  }
+}
+
+.make-order__btn-container {
+  .btn {
+    width: 100%;
+  }
+}
+
+.make-order__badge {
+  color: #fff;
+  font-size: rem(32);
+  line-height: 1.37;
+  font-weight: 600;
+  position: absolute;
+  bottom: rem(32);
+  left: rem(-32);
+  z-index: 3;
+  span {
+    max-width: rem(190);
+    text-align: right;
+    position: absolute;
+    bottom: rem(32);
+    right: rem(45);
+  }
 }

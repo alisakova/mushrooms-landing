@@ -1,0 +1,43 @@
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  color: #6c6e6f;
+}
+.copyright p {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.copyright br {
+  display: none;
+}
+.copyright img {
+  margin: 10px auto !important;
+}
+.copyright a {
+  color: #6c6e6f;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #ff0069;
+  text-decoration: none;
+}
+.errField {
+  display: none;
+  font-size: 14px;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.errorMessage {
+  font-size: 11px;
+  background: rgba(255, 0, 0, 0.64);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  margin: 10px 0 0;
+}

@@ -1,0 +1,81 @@
+.steps {
+  background: $blue;
+  padding-top: rem(70);
+  padding-bottom: rem(50);
+  position: relative;
+  h2 {
+    color: #fff;
+    margin-bottom: rem(70);
+    text-align: center;
+  }
+}
+
+.steps__container {
+  max-width: rem(838);
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.steps__step {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  &:not(:last-child) {
+    margin-bottom: rem(48);
+  }
+  &_reverse {
+    flex-direction: row-reverse;
+    .steps__img {
+      margin-right: 0;
+    }
+    .steps__text {
+      margin-right: rem(48);
+      text-align: right;
+    }
+  }
+}
+
+.steps__img {
+  max-width: rem(304);
+  min-width: rem(304);
+  margin-right: rem(48);
+}
+
+.steps__line {
+  min-width: rem(128);
+  height: rem(1);
+  background: #fff;
+  display: block;
+  margin-right: rem(48);
+}
+
+.steps__text {
+  align-self: flex-start;
+  margin-top: rem(115);
+}
+
+.steps__number {
+  display: block;
+  font-family: $caption-font;
+  font-size: rem(48);
+  margin-bottom: rem(22);
+}
+
+.steps__descr {
+  font-size: rem(24);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.steps__wave {
+  background: url('../img/blue-wave.svg') no-repeat;
+  background-size: 102%;
+  background-position-x: -13px;
+  height: rem(600);
+  width: 100%;
+  position: absolute;
+  bottom: rem(-320);
+  z-index: -1;
+}

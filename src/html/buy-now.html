@@ -1,0 +1,61 @@
+<section class="buy-now">
+  <div class="container">
+    <div class="buy-now__content">
+      <div class="buy-now__caption">
+        Закажите домашнюю
+        <span class="large">грибницу</span>
+        <span class="large">вешенки!</span>
+        <div class="buy-now__badge">
+          со скидкой 70%
+        </div>
+      </div>
+      <div class="buy-now__img">
+        <img src="img/mushroom.png" alt="Mushroom" />
+      </div>
+      <div class="buy-now__info">
+        <div class="buy-now__time">
+          <h2>До конца акции осталось:</h2>
+          <div id="timer" class="buy-now__clock clock">
+            <span class="hours">00</span>
+            <span class="minutes">00</span>
+            <span class="seconds">00</span>
+          </div>
+          <div class="clock-name">
+            <span>Часов</span>
+            <span>Минут</span>
+            <span>Секунд</span>
+          </div>
+        </div>
+        <div class="buy-now__price price">
+          <div class="price__row">
+            <span class="price__new">Новая цена:</span>
+            <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
+          </div>
+          <div class="price__row">
+            <span class="price__old">старая цена:</span>
+            <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
+          </div>
+        </div>
+        <form class="buy-now__form form">
+          <!-- {if $countrySelect}
+            <select name="country" class="country">
+                {foreach $prices as $country}
+                    <option value='{$country.country_id}'{if $country.active} selected="selected"{/if}>{$country.name}</option>
+                {/foreach}
+            </select>
+          {else}
+            <input type="hidden" name="country" value="0">
+          {/if} -->
+          <input type="text" name="name" class="form__input" placeholder="Имя" required />
+          <input type="text" name="phone" class="form__input" placeholder="Телефон" required />
+          <button type="submit" class="form__btn btn">
+            Заказать
+          </button>
+          <input type="hidden" name="address" value="">
+          <input type="hidden" name="product_count" id="product_count" value="1">
+          <input type="hidden" name="number_product" value="{$product.id}">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

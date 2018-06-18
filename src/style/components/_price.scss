@@ -4,13 +4,20 @@
 }
 
 .price__row {
-  &:first-child {
-    // margin-bottom: rem(4);
-  }
   &:last-child {
-    text-decoration: line-through;
+    position: relative;
     color: #a0a0a0;
     font-weight: 300;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: rem(1);
+      max-width: rem(230);
+      width: 100%;
+      background: #a0a0a0;
+      top: rem(18);
+    }
   }
 }
 

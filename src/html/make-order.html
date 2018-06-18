@@ -1,28 +1,79 @@
 <section class="make-order">
   <div class="container">
     <div class="make-order__content">
+      <div class="make-order__badge">
+        <div class="make-order__icon">
+          <svg width="317" height="161" viewBox="0 0 317 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+            <path d="M31 130.5V35.5L16 19.5V0L0 14.5V91.5L31 130.5Z" transform="translate(16 13.5)" fill="#EB5757"/>
+            </g>
+            <path d="M0 5L5 0V10L0 5Z" transform="translate(27 23)" fill="#9D3C3C"/>
+            <g filter="url(#filter1_d)">
+            <path d="M0 0H257V95H0V0Z" transform="translate(47 49)" fill="#EB5757"/>
+            </g>
+            <defs>
+              <filter id="filter0_d" x="0" y="0.5" width="57" height="156.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+                <feOffset dx="-3"/>
+                <feGaussianBlur stdDeviation="6.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.921569 0 0 0 0 0.341176 0 0 0 0 0.341176 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              <filter id="filter1_d" x="34" y="40" width="283" height="121" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="6.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.921569 0 0 0 0 0.341176 0 0 0 0 0.341176 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <span>со скидкой 70%</span>
+      </div>
       <div class="make-order__caption">
-        Закажите
-        домашнюю
-        грибницу
-        вешенки!
+        Закажите домашнюю
+        <span class="large">грибницу</span>
+        <span class="large">вешенки!</span>
       </div>
       <div class="make-order__img">
         <img src="img/mushroom.png" alt="Mushroom" />
       </div>
-      <div class="make-order__time">
-        <h2>До конца акции осталось:</h2>
-        <div id="timer" class="make-order__clock clock">
-          <span class="hours">00</span>
-          <span class="minutes">00</span>
-          <span class="seconds">00</span>
+      <div class="make-order__descr">
+        <div class="make-order__time">
+          <h2>До конца акции осталось:</h2>
+          <div id="timer" class="make-order__clock clock">
+            <span class="hours">00</span>
+            <span class="minutes">00</span>
+            <span class="seconds">00</span>
+          </div>
+          <div class="clock-name">
+            <span>Часов</span>
+            <span>Минут</span>
+            <span>Секунд</span>
+          </div>
         </div>
-        <div class="clock-name">
-          <span>Часов</span>
-          <span>Минут</span>
-          <span>Секунд</span>
+        <div class="make-order__price price">
+          <div class="price__row">
+            <span class="price__new">Новая цена:</span>
+            <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
+          </div>
+          <div class="price__row">
+            <span class="price__old">старая цена:</span>
+            <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
+          </div>
+        </div>
+        <div class="make-order__btn-container">
+          <button type="button" class="first-slide__btn btn">
+            Заказать
+          </button>
         </div>
       </div>
+
     </div>
   </div>
 </section>
