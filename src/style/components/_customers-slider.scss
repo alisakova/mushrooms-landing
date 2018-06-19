@@ -1,0 +1,43 @@
+.customers-slider {
+  &.slick-slider {
+    max-height: rem(424);
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 rem(120);
+    height: 100%;
+  }
+  p {
+    font-style: italic;
+    text-align: center;
+    max-width: rem(651);
+  }
+  .slick-prev {
+    left: rem(295);
+  }
+  .slick-next {
+    right: rem(295);
+  }
+}
+
+.customers-slider__img {
+  max-width: rem(144);
+  margin-bottom: rem(30);
+}
+
+.customers-slider__info {
+  font-size: rem(18);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: rem(38);
+  span {
+    display: block;
+    &:first-child {
+      margin-bottom: rem(8);
+    }
+  }
+}
