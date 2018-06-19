@@ -8,7 +8,7 @@ $(document).ready(function(){
   $('.customers-slider').slick({
     infinite: true,
     dots: false,
-    // autoplay: true,
+    autoplay: true,
     speed: 500
   });
   $("._to-form").on("click", function(e) {
@@ -19,5 +19,8 @@ $(document).ready(function(){
 });
 
 window.onload = function(){
-  initializeClock('timer', deadline);
+  var timers = document.querySelectorAll('._timer');
+  timers.forEach(function(elem) {
+    initializeClock(elem, deadline);
+  });
 };
