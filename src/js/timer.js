@@ -35,11 +35,10 @@ function getCookie(name) {
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id),
-    hoursSpan = clock.querySelector(".hours"),
-    minutesSpan = clock.querySelector(".minutes"),
-    secondsSpan = clock.querySelector(".seconds");
+function initializeClock(timer, endtime) {
+  var hoursSpan = timer.querySelector(".hours"),
+  minutesSpan = timer.querySelector(".minutes"),
+  secondsSpan = timer.querySelector(".seconds");
 
   function updateClock() {
     var t = getTimeRemaining(endtime);
