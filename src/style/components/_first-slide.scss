@@ -180,7 +180,6 @@
   }
   .first-slide__wave {
     background-size: 115%;
-    top: 82%;
   }
 }
 
@@ -213,7 +212,6 @@
   }
   .first-slide__wave {
     background-size: 130%;
-    top: 85%;
   }
 }
 
@@ -223,9 +221,15 @@
       padding: 0;
     }
   }
+  .first-slide__wave {
+    top: 85%;
+  }
   .first-slide__col {
     &:first-child {
       margin-right: 1rem;
+    }
+    &:last-child {
+      padding-right: 0.7rem;
     }
   }
   .first-slide__img {
