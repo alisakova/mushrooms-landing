@@ -21,6 +21,12 @@
   @include input-placeholder {
     color: $input-color;
     font-size: rem(16);
+    transition: color 250ms;
+  }
+  &:focus {
+    @include input-placeholder {
+      color: transparent;
+    }
   }
 }
 

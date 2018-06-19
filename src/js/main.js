@@ -11,4 +11,9 @@ $(document).ready(function(){
     // autoplay: true,
     speed: 500
   });
+  $("._to-form").on("click", function(e) {
+    var formPos = $(".form").offset().top;
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: formPos }, 600);
+  });
 });
