@@ -39,11 +39,18 @@
 .set__line {
   background: $green;
   min-width: rem(128);
-  height: rem(1);
+  height: 1px;
   display: block;
   margin-right: rem(24);
 }
 
 .set__icon {
   margin-right: rem(32);
+  max-width: rem(96);
+}
+
+@media (max-width: 768px) {
+  .set__item {
+    font-size: 1rem;
+  }
 }

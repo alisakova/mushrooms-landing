@@ -26,3 +26,28 @@
     bottom: rem(-9);
   }
 }
+
+
+@media (max-width: 992px) {
+  .quote__text {
+    text-align: center;
+    padding: {
+      left: rem(180);
+      right: rem(180);
+    }
+  }
+  .quote__icon {
+    &_left {
+      left: 0;
+    }
+    &_right {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: rem(26);
+  }
+}

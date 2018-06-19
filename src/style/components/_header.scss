@@ -23,3 +23,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .header {
+    .container {
+      padding: 0 rem(20);
+    }
+  }
+}

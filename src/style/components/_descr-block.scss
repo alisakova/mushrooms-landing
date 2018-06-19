@@ -48,7 +48,7 @@
 
 @media (min-width: 1500px) {
   .descr-block {
-    padding-top: rem(450); 
+    padding-top: rem(450);
   }
 }
 
@@ -73,5 +73,19 @@
 @media (max-width: 1180px) {
   .descr-block {
     margin-top: rem(-130);
+  }
+}
+
+@media (max-width: 768px) {
+  .descr-block__img-container {
+    min-width: 15rem;
+  }
+  .descr-block__img {
+    &_small {
+      display: none;
+    }
+    &_medium {
+      max-width: 100%;
+    }
   }
 }

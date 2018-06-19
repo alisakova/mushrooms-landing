@@ -36,3 +36,9 @@
   color: #a0a0a0;
   font-size: rem(24);
 }
+
+@media (max-width: 768px) {
+  .price {
+    margin-left: rem(30);
+  }
+}

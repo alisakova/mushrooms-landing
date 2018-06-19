@@ -9,7 +9,8 @@
   padding: rem(18 70);
   border: none;
   cursor: pointer;
+  transition: all 250ms;
   &:hover, &:active, &:focus {
-    background: darken($rose, 10%);
+    background: darken($rose, 8%);
   }
 }

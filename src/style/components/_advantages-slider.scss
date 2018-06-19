@@ -93,7 +93,7 @@
 }
 
 .advantages-slider__line {
-  height: rem(1);
+  height: 1px;
   background: #000;
   min-width: rem(128);
   margin-right: rem(48);
@@ -103,4 +103,24 @@
   font-size: rem(36);
   font-weight: 600;
   margin-bottom: rem(32);
+}
+
+@media (max-width: 868px) {
+  .advantages-slider__caption {
+    font-size: rem(28);
+  }
+  .advantages-slider {
+    .slick-slide {
+      padding: 0 rem(70);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages-slider__text {
+    font-size: rem(16);
+    br {
+      display: none;
+    }
+  }
 }

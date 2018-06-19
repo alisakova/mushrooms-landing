@@ -45,7 +45,7 @@
 
 .steps__line {
   min-width: rem(128);
-  height: rem(1);
+  height: 1px;
   background: #fff;
   display: block;
   margin-right: rem(48);
@@ -78,4 +78,42 @@
   position: absolute;
   bottom: rem(-320);
   z-index: -1;
+}
+
+@media (min-width: 1700px) {
+  .steps__wave {
+    height: rem(650);
+  }
+}
+
+@media (min-width: 1800px) {
+  .steps__wave {
+    height: rem(750);
+    bottom: rem(-370);
+  }
+}
+
+@media (min-width: 2000px) {
+  .steps__wave {
+    bottom: rem(-430);
+  }
+}
+
+@media (max-width: 1330px) {
+  .steps__wave {
+    bottom: rem(-350);
+  }
+}
+
+@media (max-width: 1180px) {
+  .steps__wave {
+    bottom: rem(-400);
+    background-size: 115%;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps__wave {
+    bottom: rem(-450);
+  }
 }
