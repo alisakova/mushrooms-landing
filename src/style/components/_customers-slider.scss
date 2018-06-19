@@ -15,6 +15,10 @@
     text-align: center;
     max-width: rem(651);
   }
+  .slick-arrow {
+    top: rem(96);
+    transform: none;
+  }
   .slick-prev {
     left: rem(295);
   }
@@ -33,11 +37,41 @@
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
-  margin-bottom: rem(38);
+  margin-bottom: rem(32);
   span {
     display: block;
     &:first-child {
       margin-bottom: rem(8);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .customers-slider {
+    .slick-slide {
+      padding: 0 rem(40);
+    }
+    .slick-prev {
+      left: rem(150);
+    }
+    .slick-next {
+      right: rem(150);
+    }
+  }
+
+}
+
+@media (max-width: 540px) {
+  .customers-slider {
+    .slick-arrow {
+      top: rem(50);
+      transform: none;
+    }
+    .slick-prev {
+      left: rem(90);
+    }
+    .slick-next {
+      right: rem(90);
     }
   }
 }

@@ -26,3 +26,14 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: 540px) {
+  .attention__icon {
+    align-items: center;
+    max-width: rem(120);
+    margin: 0 auto rem(24);
+  }
+  .attention__text {
+    margin-bottom: 0;
+  }
+}

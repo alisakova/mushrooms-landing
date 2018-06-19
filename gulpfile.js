@@ -108,6 +108,7 @@ gulp.task("image:build", function() {
       imagemin({
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }],
+        optimizationLevel: 5,
         use: [pngquant()],
         interlaced: true
       })

@@ -5,3 +5,9 @@
     text-align: center;
   }
 }
+
+@media (max-width: 540px) {
+  .customers {
+    margin-bottom: rem(100);
+  }
+}

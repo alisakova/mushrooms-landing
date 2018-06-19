@@ -43,3 +43,23 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: 540px) {
+  .expert {
+    h2 {
+      text-align: center;
+    }
+  }
+  .expert__container {
+    flex-direction: column-reverse;
+  }
+  .expert__col {
+    &:first-child {
+      align-self: inherit;
+      margin-top: rem(-100, 15);
+    }
+  }
+  .expert__img {
+    max-width: rem(220);
+  }
+}

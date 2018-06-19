@@ -12,7 +12,7 @@
       content: '';
       position: absolute;
       left: 0;
-      height: rem(1);
+      height: 1px;
       max-width: rem(230);
       width: 100%;
       background: #a0a0a0;
@@ -40,5 +40,24 @@
 @media (max-width: 768px) {
   .price {
     margin-left: rem(30);
+  }
+}
+
+@media (max-width: 680px) {
+  .price__new,
+  .price__value-new {
+    font-size: rem(24);
+  }
+  .price__old,
+  .price__value-old {
+    font-size: rem(18);
+  }
+  .price__row {
+    &:last-child {
+      &:after {
+        max-width: rem(175);
+        top: rem(16);
+      }
+    }
   }
 }

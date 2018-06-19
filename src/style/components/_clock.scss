@@ -33,3 +33,39 @@
     }
   }
 }
+
+@media (max-width: 680px) {
+  .clock {
+    span {
+      width: rem(50, 15);
+      height: rem(50, 15);
+      font-size: rem(14, 15);
+      border-radius: rem(8, 15);
+    }
+  }
+  .clock-name {
+    span {
+      width: rem(50, 15);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .clock {
+    span {
+      width: rem(40, 15);
+      height: rem(40, 15);
+      &:not(:last-child) {
+        margin-right: rem(24);
+      }
+    }
+  }
+  .clock-name {
+    span {
+      width: rem(40, 15);
+      &:not(:last-child) {
+        margin-right: rem(24);
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .advantages {
   padding-top: rem(306);
-  margin-bottom: rem(46);
+  margin-bottom: rem(90);
   h2 {
     text-align: center;
     margin-bottom: rem(64);
@@ -34,5 +34,17 @@
 @media (max-width: 768px) {
   .advantages {
     padding-top: rem(300);
+  }
+}
+
+@media (max-width: 540px) {
+  .advantages {
+    padding-top: rem(200);
+  }
+}
+
+@media (max-width: 440px) {
+  .advantages {
+    padding-top: rem(150);
   }
 }

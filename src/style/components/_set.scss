@@ -54,3 +54,19 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 540px) {
+  .set__descr {
+    font-size: rem(16);
+  }
+  .set__line {
+    min-width: rem(60);
+  }
+  .set__img {
+    left: 0;
+  }
+  .set__icon {
+    width: 3.5rem;
+    margin-right: 1rem;
+  }
+}

@@ -51,3 +51,18 @@
     font-size: rem(26);
   }
 }
+
+@media (max-width: 540px) {
+  .quote {
+    font-size: rem(18);
+  }
+  .quote__icon {
+    max-width: rem(60);
+  }
+  .quote__text {
+    padding: {
+      left: rem(60);
+      right: rem(60);
+    }
+  }
+}

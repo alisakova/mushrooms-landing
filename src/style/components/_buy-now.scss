@@ -31,9 +31,6 @@
   padding: 0 rem(14) rem(8);
   margin-top: rem(18);
   box-shadow: 0px rem(4 13) rgba(235, 87, 87, 0.25);
-  &.mobile {
-    display: none;
-  }
 }
 
 .buy-now__img {
@@ -57,7 +54,11 @@
 }
 
 .buy-now__clock {
-  margin-bottom: rem(26)
+  margin-bottom: rem(26);
+  justify-content: center;
+  & + .clock-name {
+    justify-content: center;
+  }
 }
 
 .buy-now__price {
@@ -65,27 +66,50 @@
     left: 0;
     bottom: rem(26);
   }
+  &.mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 840px) {
   .buy-now__content {
     justify-content: space-between;
   }
+  .buy-now__img {
+    max-width: rem(300);
+    margin-bottom: 2rem;
+    left: -2rem;
+    top: rem(10);
+  }
   .buy-now__caption {
     display: none;
   }
-  .buy-now__img {
-    top: rem(10);
+  .buy-now__price {
+    display: none;
   }
-  .buy-now__badge {
+  .buy-now__price {
     &.mobile {
-      position: relative;
-      z-index: 2;
-      max-width: rem(260);
-      padding: rem(10);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .buy-now__info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  .buy-now__content {
+    padding: 0;
+  }
+  .buy-now__img {
+    left: -4rem;
+  }
+  .buy-now__time {
+    h2 {
+      font-size: rem(18);
     }
   }
 }
