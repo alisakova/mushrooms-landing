@@ -17,3 +17,7 @@ $(document).ready(function(){
     $("html, body").animate({ scrollTop: formPos }, 600);
   });
 });
+
+window.onload = function(){
+  initializeClock('timer', deadline);
+};
