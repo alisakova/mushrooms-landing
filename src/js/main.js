@@ -8,6 +8,7 @@ $(document).ready(function(){
   $('.customers-slider').slick({
     infinite: true,
     dots: false,
+    autoplay: true,
     speed: 500
   });
   $("._to-form").on("click", function(e) {
